@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="aarnav100.developer.attendancemanager.StudentActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:padding="20dp"
+            android:gravity="center_vertical"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/drawable_student"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <LinearLayout
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/std_name"
+                    android:text="Student Name"
+                    android:maxLines="2"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/std_rollno"
+                    android:text="Roll number : 1"
+                    android:maxLines="2"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/grd_name"
+                    android:text="Guardian Name"
+                    android:maxLines="2"
+                    android:textColor="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/grd_rel"
+                    android:text="Guardian Relation"
+                    android:maxLines="2"
+                    android:textStyle="italic"
+                    android:textColor="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/contact_num"
+                    android:text="Contact Number"
+                    android:maxLines="2"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_present"
+                android:text="P : 27"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_absent"
+                android:text="A : 03"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_percentage"
+                android:text="Percentage : 90.00%"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:id="@+id/student_calendar"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/selected_date"
+            android:text="Selected date : 21-10-1997"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/selected_date_status"
+            android:text="Date status : Unmarked"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/mark_present"
+                android:text="Present"
+                android:textColor="@android:color/white"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/mark_absent"
+                android:text="Absent"
+                android:textColor="@android:color/white"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/holo_red_dark"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

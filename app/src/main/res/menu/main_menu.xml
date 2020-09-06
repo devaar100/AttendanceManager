@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="aarnav100.developer.attendancemanager.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:title="Backup/Help"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/linpar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="aarnav100.developer.attendancemanager.LoginActivity">
+    <ImageView
+        android:src="@drawable/teacher"
+        android:layout_width="160dp"
+        android:layout_height="160dp" />
+    <LinearLayout
+        android:background="@drawable/partial_rounded_white_rectangle"
+        android:orientation="vertical"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <aarnav100.developer.attendancemanager.Generic.TypeWriter
+            android:text="Teacher Name"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/colorGray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <EditText
+            android:id="@+id/name"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/partial_rounded_white_rectangle"
+        android:orientation="vertical"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <aarnav100.developer.attendancemanager.Generic.TypeWriter
+            android:text="Email Address"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/colorGray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <EditText
+            android:id="@+id/email"
+            android:inputType="textEmailAddress"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn"
+        android:text="Let's Begin"
+        android:backgroundTint="@color/colorYellow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"/>
+</LinearLayout>
